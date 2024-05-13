@@ -1,20 +1,67 @@
-import React from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom';
-import Home from './Pages/Home/Home';
-import Test1 from './Pages/Tests/test1';
+import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import { ConfigProvider } from "antd";
+import Home from "./Pages/Home/Home";
+import Test1 from "./Pages/Tests/test1";
 
 const App = () => {
-  const location = useLocation();
+  const theme = {
+    token: {
+      // Seed Token
+      colorPrimary: "#fec544",
+
+      // Alias Token
+      colorBgContainer: "#fff",
+    },
+  };
+
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  // Update mouse position with a delay
+  const updateMousePositionWithDelay = (event) => {
+    setTimeout(() => {
+      setMousePosition({ x: event.clientX, y: event.clientY });
+    }, 150); // Adjust the delay time as needed
+  };
+
+  // Add event listener when component mounts
+  useEffect(() => {
+    window.addEventListener("mousemove", updateMousePositionWithDelay);
+
+    // Remove event listener when component unmounts
+    return () => {
+      window.removeEventListener("mousemove", updateMousePositionWithDelay);
+    };
+  }, []);
 
   return (
     <>
-      <Routes location={location}>
-        <Route path="*" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/test1" element={<Test1 />} />
-      </Routes>
+      <div>
+        <ConfigProvider theme={theme}>
+          <div
+            className="mouse-tracker"
+            style={{
+              position: "absolute",
+              width: "10px",
+              height: "10px",
+              borderRadius: "50%",
+              backgroundColor: "#fec544", // Adjust color as needed
+              left: mousePosition.x - 5, // Offset to center the dot
+              top: mousePosition.y - 5, // Offset to center the dot
+              pointerEvents: "none", // Prevent dot from interfering with mouse events
+              cursor: "none", // Hide the actual mouse cursor
+              transition: "ease", // Adjust animation speed as needed
+            }}
+          ></div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/test1" element={<Test1 />} />
+          </Routes>
+        </ConfigProvider>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
