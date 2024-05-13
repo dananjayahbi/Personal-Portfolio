@@ -38,21 +38,20 @@ const App = () => {
     <>
       <div>
         <ConfigProvider theme={theme}>
-          <div
+          {/* <div
             className="mouse-tracker"
             style={{
               position: "absolute",
               width: "10px",
               height: "10px",
               borderRadius: "50%",
-              backgroundColor: "#fec544", // Adjust color as needed
-              left: mousePosition.x - 5, // Offset to center the dot
-              top: mousePosition.y - 5, // Offset to center the dot
-              pointerEvents: "none", // Prevent dot from interfering with mouse events
-              cursor: "none", // Hide the actual mouse cursor
-              transition: "ease", // Adjust animation speed as needed
+              backgroundColor: "#fec544",
+              left: mousePosition.x - 5,
+              top: mousePosition.y - 5,
+              pointerEvents: "none",
+              transition: "ease",
             }}
-          ></div>
+          ></div> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
