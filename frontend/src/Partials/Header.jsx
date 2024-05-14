@@ -20,21 +20,10 @@ const HeaderComponent = () => {
         position: "relative",
         display: "flex",
         marginBottom: "50px",
-        // height: "auto",
         justifyContent: "space-between",
         zIndex: 1,
       }}
     >
-      <div>
-        <a href="/">
-          <img
-            src="https://marketplace.canva.com/EAFYecj_1Sc/1/0/1600w/canva-cream-and-black-simple-elegant-catering-food-logo-2LPev1tJbrg.jpg"
-            width="80px"
-            alt="logo"
-            style={{ borderRadius: "50%" }}
-          />
-        </a>
-      </div>
       <Menu
         theme="light"
         mode="horizontal"

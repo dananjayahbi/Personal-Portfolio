@@ -31,10 +31,9 @@ const Contact = () => {
           CONTACT
         </span>
         <div style={{ textAlign: "center" }}>
-          <span style={{ color: "#fff" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ligula
-            nulla tincidunt <br /> id faucibus sed suscipit feugiat.
-          </span>
+          <p style={{ color: "#fff", fontSize: "20px" }}>
+            Have a question or want to work together?
+          </p>
           {/* icons and data */}
           <div style={{ display: "flex", marginTop: "50px" }}>
             <div

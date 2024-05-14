@@ -44,7 +44,7 @@ const AboutMe = () => {
             <span
               style={{ fontSize: "36px", color: "#fff", lineHeight: "43.2px" }}
             >
-              Hi There! I'm Edward Devis
+              Hi There! I'm Isuru Dananjaya
             </span>{" "}
             <br />
             <span
@@ -54,16 +54,13 @@ const AboutMe = () => {
                 lineHeight: "58.8px",
               }}
             >
-              Visual Designer
+              Full-Stack Web Designer & Developer
             </span>{" "}
             <br />
             <span
               style={{ color: "#fff", fontSize: "16px", lineHeight: "25.6px" }}
             >
-              I am a Visual Designer with a strong focus on digital branding.
-              Visul <br /> design seeks to attract, inspire, create desires and
-              otivate people to <br /> respond to messages, with a view to
-              making a favorable impact.
+              I am a full-stack web designer and developer with a passion for creating beautiful and <br /> functional user experiences. I have a keen interest in modern web technologies <br /> and I love to work with them. I am a fast learner and I am always eager to learn new things.
             </span>
             <ul
               style={{
@@ -89,7 +86,7 @@ const AboutMe = () => {
               <li>Language&nbsp;&nbsp; : English, Sinhala</li>
               <li>Freelance&nbsp;&nbsp; : Available</li>
             </ul>
-            <button
+            {/* <button
               style={{
                 width: "170px",
                 height: "48px",
@@ -107,7 +104,7 @@ const AboutMe = () => {
               }}
             >
               Download CV
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

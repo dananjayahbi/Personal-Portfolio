@@ -30,11 +30,11 @@ const HeroSection = () => {
             display: "flex",
             flexDirection: "column",
             textAlign: "center",
-            maxWidth: "600px", // Set maximum width for better responsiveness
+            maxWidth: "650px", // Set maximum width for better responsiveness
           }}
         >
           <span style={{ color: "#fff", fontSize: "clamp(30px, 8vw, 60px)" }}>
-            Hi, I'm <span style={{ color: "#fec544" }}>John Doe</span>
+            Hi, I'm <span style={{ color: "#fec544" }}>Isuru Dananjaya</span>
           </span>{" "}
           <br />
           <span
@@ -44,9 +44,7 @@ const HeroSection = () => {
               lineHeight: "1.5",
             }}
           >
-            I am a frontend web developer. I can provide clean code and pixel
-            perfect design. <br />I also make websites more interactive with
-            web animations.
+            I am a full-stack web designer and developer with a passion for creating beautiful and functional user experiences.
           </span>
           <div
             style={{

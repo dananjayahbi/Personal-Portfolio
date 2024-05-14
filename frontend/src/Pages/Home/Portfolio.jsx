@@ -165,14 +165,14 @@ const Portfolio = () => {
       id: 2,
       image: WordsCounter,
       topic: "Words Counter App",
-      description: "A simple words counter app that counts the number of words in a given text.",
+      description: "A simple words counter app that counts the number of words in a given text excluding spaces and special characters.",
       galaryArray: wordsCounterImages,
     },
     {
       id: 3,
       image: TorrentsDirect,
       topic: "Torrents Direct Download App",
-      description: "A torrents direct download app that allows you to download torrents directly.",
+      description: "A torrents direct download app that allows you to download torrents directly. (Backend)",
       galaryArray: torrentsDirectImages,
     },
     {
@@ -200,7 +200,7 @@ const Portfolio = () => {
       id: 7,
       image: CompCollectionApp,
       topic: "Components Management app",
-      description: "A components management app that helps you manage your components efficiently.",
+      description: "A components management app that helps you manage your web components efficiently.",
       galaryArray: componentsCollectionAppImages,
     },
     {

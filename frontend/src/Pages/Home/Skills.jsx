@@ -53,7 +53,7 @@ const Skills = () => {
                 textAlign: "center", // Centered text for responsiveness
               }}
             >
-              All the skills that I have in that field of work are mentioned.
+              Here are some of the technologies and tools I am familiar with...
             </span>
           </div>
         </div>
