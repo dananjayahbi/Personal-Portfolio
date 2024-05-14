@@ -44,7 +44,7 @@ const Skills = () => {
           >
             SKILLS
           </span>
-          <div>
+          <div style={{marginTop: "30px"}}>
             <span
               style={{
                 color: "#fff",
