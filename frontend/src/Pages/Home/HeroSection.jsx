@@ -65,6 +65,7 @@ const HeroSection = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 transition: "border-color 0.3s ease",
+                cursor: "pointer",
               }}
               onMouseEnter={(e) => {
                 e.target.style.borderColor = "#6c757d";
@@ -72,6 +73,7 @@ const HeroSection = () => {
               onMouseLeave={(e) => {
                 e.target.style.borderColor = "#35383b";
               }}
+              onClick={() => {window.open("https://www.facebook.com/isuru.dananjaya.969300/")}}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,6 +102,7 @@ const HeroSection = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 transition: "border-color 0.3s ease",
+                cursor: "pointer",
               }}
               onMouseEnter={(e) => {
                 e.target.style.borderColor = "#6c757d";
@@ -107,6 +110,8 @@ const HeroSection = () => {
               onMouseLeave={(e) => {
                 e.target.style.borderColor = "#35383b";
               }}
+              
+              onClick={() => {window.open("https://www.linkedin.com/in/isuru-dananjaya-6b5134217/")}}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,6 +142,7 @@ const HeroSection = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 transition: "border-color 0.3s ease",
+                cursor: "pointer",
               }}
               onMouseEnter={(e) => {
                 e.target.style.borderColor = "#6c757d";
@@ -144,6 +150,8 @@ const HeroSection = () => {
               onMouseLeave={(e) => {
                 e.target.style.borderColor = "#35383b";
               }}
+
+              onClick={() => {window.open("https://github.com/dananjayahbi")}}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
