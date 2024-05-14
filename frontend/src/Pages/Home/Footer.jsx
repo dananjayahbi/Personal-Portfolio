@@ -14,7 +14,6 @@ const Footer = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            margin: "25px 0 0 0"
           }}
         >
           <div
